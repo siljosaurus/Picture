@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Picture</string>
+    <string name="act_name_converter">Converter</string>
+    <string name="converterPlaceholder">Centimeter</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="nextActivity_button">Next Activity</string>
+    <string name="radioButton_cm">Convert cm to inches</string>
+    <string name="radioButton_inch">Convert inches to cm</string>
+
+</resources>
