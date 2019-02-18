@@ -6,8 +6,7 @@ import android.util.Log
 import android.content.Intent
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_converter.*
+import android.widget.Toast
 
 
 class ConverterActivity : AppCompatActivity() {
@@ -16,12 +15,21 @@ class ConverterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_converter)
 
+
         val calculateButton = findViewById<Button>(R.id.calculateButton)
         calculateButton.setOnClickListener {
             Log.d("ConverterActivity", "I was pressed!")
 
-            // val cmInput = centimeterInput.text.toString()
-            // val reference = convertToInch(cmInput.toDouble())
+            val cmInput = findViewById<EditText>(R.id.centimeterInput)
+            val input = cmInput.text.toString()
+
+            Toast.makeText(this@ConverterActivity, "I clicked", Toast.LENGTH_SHORT).show()
+
+
+            Log.d("ConverterActivity", "Input: $input")
+
+
+            // val reference = convertToInch(cmInput.toString())
             // Log.d("ConverterActivity", "Converted from $cmInput to $reference")
 
         }
