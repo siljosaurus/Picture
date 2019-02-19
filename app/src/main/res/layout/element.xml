@@ -3,4 +3,12 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="@string/title_textView_text"
+                android:layout_width="95dp"
+                android:layout_height="38dp" android:id="@+id/title_textView"/>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

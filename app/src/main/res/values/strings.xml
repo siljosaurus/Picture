@@ -7,5 +7,7 @@
     <string name="nextActivity_button">Next Activity</string>
     <string name="radioButton_cm">Convert cm to inches</string>
     <string name="radioButton_inch">Convert inches to cm</string>
+    <string name ="title_textView_text">Title</string>
+    <string name="description_textView_text">Description</string>
 
 </resources>

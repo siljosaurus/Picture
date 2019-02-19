@@ -13,10 +13,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListActivity">
+        <activity
+                android:name=".ListActivity">
+
         </activity>
-        <activity android:name=".ConverterActivity">
+
+        <activity
+                android:name=".ConverterActivity">
+
         </activity>
+
         <activity android:name=".PictureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -20,32 +20,41 @@ class ConverterActivity : AppCompatActivity() {
         calculateButton.setOnClickListener {
             Log.d("ConverterActivity", "I was pressed!")
 
+
             val cmInput = findViewById<EditText>(R.id.centimeterInput)
             val input = cmInput.text.toString()
 
-            Toast.makeText(this@ConverterActivity, "I clicked", Toast.LENGTH_SHORT).show()
+            // Lukke tastaturet
 
 
-            Log.d("ConverterActivity", "Input: $input")
+            if (input.isEmpty() ) { // Håndterer tomt input
+                Toast.makeText(this, "Field is empty, enter a value.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
+            else if (input.length <= 0 || input.length > 999999) { // Håndterer ugyldig input
+                Toast.makeText(this, "Value must be greater than 0, but not greater than 7 digits", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
-            // val reference = convertToInch(cmInput.toString())
-            // Log.d("ConverterActivity", "Converted from $cmInput to $reference")
+            else {  // Håndterer gyldig input
+                val nr = input.toDouble()
+                convertToInch(nr)
+                val answer = convertToInch(nr)
 
+                Log.d("ConverterActivity", "Answer: $answer")
+            }
         }
 
         val goToList = findViewById<Button>(R.id.goToListButton)
         goToList.setOnClickListener {
-
             val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
             Log.d("ConverterActivity", "Changed Layout to the ListActivity")
         }
-
     }
-
 
     fun convertToCM(number: Double) = number*2.54
 
-    fun convertToInch(number: Double) = number*0.3937
+    fun convertToInch(number: Double) = number*0.39370079
 }
