@@ -1,7 +1,7 @@
 package com.example.siljemfl_in2000_oblig1
 
-class Element {
+class Element(val title: String, val description: String) {
 
 
-    // Dette er en enkel beholder. Aka Node
+    // Dette er en enkel beholder. Aka Node?
 }

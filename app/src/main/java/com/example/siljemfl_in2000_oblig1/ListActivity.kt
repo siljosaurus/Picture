@@ -18,10 +18,12 @@ class ListActivity : AppCompatActivity() {
 
         // Datastruktur for å lagre elementene, arrayList eller mutableList
 
+        val datastruktur = ArrayList<String>("Tittel 1", "Tittel 2", "Tittel 3")
+
         // Opprette Adapter til RecyclerView
 
         list_recycleView.layoutManager = LinearLayoutManager(this)
-        list_recycleView.adapter = ListAdapter()
+        list_recycleView.adapter = ListAdapter(datastruktur)
 
 
 

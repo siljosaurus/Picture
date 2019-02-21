@@ -9,7 +9,7 @@
         tools:context=".PictureActivity">
 
     <ImageView
-            android:layout_width="289dp"
+            android:layout_width="393dp"
             android:layout_height="320dp" tools:srcCompat="@tools:sample/avatars"
             android:id="@+id/olejohanDahl"
             android:contentDescription="@string/oleJohanDahlsHus"
