@@ -14,6 +14,7 @@ class ConverterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_converter)
+        setTitle("Converter")
 
 
         val calculateButton = findViewById<Button>(R.id.calculateButton)
