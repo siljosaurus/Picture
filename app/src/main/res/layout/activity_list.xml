@@ -20,7 +20,7 @@
             android:clickable="true"
             app:srcCompat="@drawable/ic_launcher_foreground"
             android:foregroundGravity="center"
-            android:id="@+id/floatingActionButton5"
+            android:id="@+id/list_floatingActionButton"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="48dp" android:layout_marginBottom="44dp"
             app:layout_constraintBottom_toBottomOf="parent" android:focusable="true" app:fabSize="normal"
     />

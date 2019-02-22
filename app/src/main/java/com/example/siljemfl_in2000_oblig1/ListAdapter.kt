@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.element.view.*
 
 
+
 class ListAdapter: RecyclerView.Adapter<ViewHolder>() {
 
-    val elementTitles = listOf("First Title", "Second title", "Third Title", "Fourth title")
-    val elementDescriptions = listOf("First Description", "Second Description", "Lolllll", "Heiiiaaaa")
+    val elementTitles = arrayListOf("elm 1", "elm 2")
+    val elementDescriptions = arrayListOf("This is the description for element 1", "This is the description for element 2")
 
     override fun getItemCount(): Int {
         return elementTitles.size
@@ -28,6 +29,14 @@ class ListAdapter: RecyclerView.Adapter<ViewHolder>() {
 
         val elementDescription = elementDescriptions.get(position)
         p0?.view?.element_textView_description?.text = elementDescription
+    }
+
+
+
+    fun update() {
+
+
+        notifyDataSetChanged()
     }
 
 }

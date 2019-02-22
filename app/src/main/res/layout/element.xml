@@ -26,7 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/element_textView_title"
                     android:textSize="18sp" android:textColor="@android:color/black"
-                    android:fontFamily="sans-serif-thin" android:typeface="sans"
+                    android:fontFamily="sans-serif-light" android:typeface="sans"
                     android:textAllCaps="false" android:lineSpacingExtra="12sp" tools:text="@tools:sample/cities"/>
             <TextView
                     android:text="This is the description for element 1"
