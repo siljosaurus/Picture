@@ -9,5 +9,9 @@
     <string name="radioButton_inch">Convert inches to cm</string>
     <string name ="title_textView_text">Title</string>
     <string name="description_textView_text">Description</string>
+    <string name="dialog_editText_description_hint">Enter description</string>
+    <string name="dialog_editText_title_hint">Enter Title</string>
+    <string name="dialog_button_text">Add</string>
+    <string name="dialog_textView_text">Add new element</string>
 
 </resources>
