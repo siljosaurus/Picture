@@ -6,6 +6,7 @@ import android.util.Log
 import android.content.Intent
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 
@@ -32,8 +33,8 @@ class ConverterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            else if (input.length <= 0 || input.length > 999999) { // Håndterer ugyldig input
-                Toast.makeText(this, "Value must be greater than 0, but not greater than 7 digits", Toast.LENGTH_SHORT).show()
+            else if (input.length <= 0 || input.length > 7) { // Håndterer ugyldig input
+                Toast.makeText(this, "Value must be greater than 0, but not greater than 7 digits", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
@@ -43,6 +44,10 @@ class ConverterActivity : AppCompatActivity() {
                 val answer = convertToInch(nr)
 
                 Log.d("ConverterActivity", "Answer: $answer")
+                val formatted = "%.2f".format(answer)
+
+                val textView = findViewById<TextView>(R.id.inchesOutput)
+                textView.text = "${input} cm = ${formatted} inches"
             }
         }
 
