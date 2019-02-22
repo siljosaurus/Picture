@@ -21,7 +21,6 @@ class ConverterActivity : AppCompatActivity() {
         calculateButton.setOnClickListener {
             Log.d("ConverterActivity", "I was pressed!")
 
-
             val cmInput = findViewById<EditText>(R.id.centimeterInput)
             val input = cmInput.text.toString()
 
